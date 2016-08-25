@@ -7,10 +7,15 @@
 		<title>Star Wars RPG</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  		<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+		<style>
+			img {height:140px; width:140px}
+			character-container {height:150px; width:150px; background: white;}
+		</style>
 	</head>
 		
 	<body background="assets/images/wallpaper-star-wars.jpg">
-		<div class="container-fluid">
+	<div class="container-fluid">
 
 		<header>
 		<nav class="navbar navbar-default">
@@ -28,29 +33,87 @@
 		</nav>
 		</header> 	 
 			
+			<div class="row">
+  			
+  			<div class="col-lg-2">
+  			<h2>Click your character to begin.</h2>
+			</div>
 
-		<div class="jumbotron">
-  			<h2>Choose your character.</h2>
+  			<div class="col-lg-2"></div> <!--spacer-->
 
-		</div>	
+  			<div class="col-lg-2">
+  			<div class="Ackbar-container"  style="border:5px solid green; text-align:center;"><p class="name1"><p><img src="assets/images/ackbar_small.jpg" alt="Admiral Ackbar"><p class="HP1"></p>
+  			</div>
+  			</div>
+
+
+  			<div class="col-lg-2">
+  			<div class="Nass-container"  style="border:5px solid green; text-align:center;"><p class="name2"></p><img src="assets/images/boss_nass_small.jpg" alt="Boss Nass"><p class="HP2"></p>
+  			</div>
+  			</div>
+
+  			<div class="col-lg-2">
+  			<div class="Lando-container"  style="border:5px solid green; text-align:center;"><p class="name3"></p><img src="assets/images/Lando_small.jpg" alt="Lando Calrissian"><p class="HP3"></p>
+  			</div>
+  			</div>	
+
+  			<div class="col-lg-2">
+  			<div class="Derlin-container"  style="border:5px solid green; text-align:center;"><p class="name4"></p><img src="assets/images/MajorBrenDerlin.jpg" alt="Major Bren Derlin"><p class="HP4"></p>
+  			</div>
+  			</div>	
+
+  			</div> <!--closing row-->		
+			
+
+		
+			
+
+	<div class="row">
+	
+		<div class="col-lg-6">
+  		<h2>Battlespace</h2><button id="attack" class="btn"><p>Attack</p></button>
+  		</div>
+
+  		<div class="col-lg-6">
+  		<h2>The Defeated</h2>
+  		</div>
+  	</div>
+  	
+  	<div class = "row">
+
+  		<div class="col-lg-2">
+  		<div class="playerCharacter"></div>
+  		</div>
+
+
+
+		<div class="col-lg-2">
+  		<div class="enemy"></div>
+  		</div>
+
+  		<div class="col-lg-2"></div>  <!--spacer-->
+
+  		<div class="col-lg-6">
+  	
+  		<div class=Loser1></div>
+  		<div class=Loser2></div>
+  		<div class=Loser3></div>
+  		</div>
+
+  	</div>  <!--closing row-->	
+
 		
 
-
-
-		
-
-
-
-		
-
-		<footer>
+	<footer style="position:fixed">
       	<div>
         	<p class="text-muted">Copyright &copy; 2016 Jonathan Jackson</p>
       	</div>
-    	</footer>
+    </footer>
 
-		</div>		<!-- closing container -->
-		</body>
+
+	</div>	
+	<script src="assets/javascript/game.js"></script>
+	</body>
 
 
 

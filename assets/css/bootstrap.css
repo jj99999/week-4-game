@@ -8,8 +8,6 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-    position: relative;
-    min-height: 100%;
 }
 body {
   margin: 0;
@@ -2258,7 +2256,7 @@ caption {
   padding-top: 8px;
   padding-bottom: 8px;
   color: #777;
-  text-align: left;
+  text-align: center;
 }
 th {
   text-align: left;
