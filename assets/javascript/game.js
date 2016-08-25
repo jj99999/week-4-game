@@ -3,7 +3,7 @@
 //characters as objects
 
 
-var ackbar = {name:"Admiral Ackbar" , healthPoints:35 , attackPower:15 , counterAttack: 5 , img: "assets/images/ackbar_small.jpg"}
+var ackbar = {name:"Admiral Ackbar" , healthPoints:35 , attackPower:15 , counterAttack: 5 }
 
 var nass = {name:"Boss Nass" , healthPoints:30 , attackPower:10 , counterAttack: 5 }
 
@@ -94,13 +94,9 @@ function attack(){
 
 attack();
 
+ 
+//need to loop back to function to choose next enemy
 
-
-//function for battle - start from attack button on click;  include HP and attackPower calculation,  loop until x reaches zero;  win/loss
-
-//loop back to function to choose next enemy
-
-//
 
 
 
